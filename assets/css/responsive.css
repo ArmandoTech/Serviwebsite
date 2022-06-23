@@ -628,6 +628,10 @@
 	}
 	
 	.main-slider .slide{
+		background-size: cover;
+    	background-position: right;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
 		padding:120px 0px;
 	}
 	
@@ -762,7 +766,13 @@
 }
 
 @media only screen and (max-width: 599px){
-	
+	.main-slider .slide{
+		background-size: cover;
+    	background-position: right;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
 	.main-slider .price,
 	.main-slider h3.light,
 	.blog-single .inner-box .lower-content h2,
@@ -836,8 +846,8 @@
 @media only screen and (max-width: 479px) {
 
 	.main-slider .slide{
-		background-size: Cover;
-		background-position: center center;
+		background-size: cover;
+    	background-position: right;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 	}
