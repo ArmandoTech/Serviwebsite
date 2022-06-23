@@ -351,7 +351,6 @@
 		overflow:auto;
 		float:none !important;
 		width:100% !important;
-		padding:0px 0px 0px;
 		border:none;
 		margin:0px 0px 0px;
 		-ms-border-radius:0px;
@@ -373,7 +372,6 @@
    
 	.main-menu .navbar-collapse.in,
 	.main-menu .collapsing{
-		padding:0px 0px 0px;
 		border:none;
 		margin:0px 0px 15px;
 		-ms-border-radius:0px;
@@ -825,12 +823,13 @@
 	.accordian-section .content-column .inner-column h2{
 		font-size:22px;
 	}
-.pricing-section {
-    padding: 30px 0px 0px;
-}
-.about-section {
-    padding: 20px 0px 100px;
-}
+
+	.pricing-section {
+		padding: 30px 0px 0px;
+	}
+	.about-section {
+		padding: 20px 0px 100px;
+	}
 	
 }
 
@@ -841,10 +840,6 @@
 		background-position: center center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-	}
-	
-	.main-header .header-upper .logo-box{
-		padding-top:12px;
 	}
 	
 	.accordion-style-one .block .acc-btn{
@@ -879,41 +874,55 @@
 	}
 	.services-section {
     padding-bottom: 32px;
-}
-.pricing-section {
-    padding: 30px 0px 0px;
-}
-.about-section {
-    padding: 33px 0px 31px;
-}
-.services-page-section {
-    padding-top: 17px;
-}
-.services-section-two {
-    padding: 100px 0px 0px;
-}
-.sidebar-page-container {
-    padding: 33px 0px 0px;
-}
-.news-block {
-    margin-bottom: 34px;
-}
-.sidebar-page-container .content-side, .sidebar-page-container .sidebar-side {
-    margin-bottom: 0px;
-}
-.services-block {
-    margin-bottom: 28px;
-}
-.services-section-two {
-    position: relative;
-    padding: 70px 0px 0px;
-}
-.quote-block {
-    margin-bottom: 30px;
-}
-.contact-form-section {
-    padding: 21px 0px 22px;
-}
-.auto-container {
-    padding: 0px 30px;
+	}
+	.pricing-section {
+		padding: 30px 0px 0px;
+	}
+	.about-section {
+		padding: 33px 0px 31px;
+	}
+	.services-page-section {
+		padding-top: 17px;
+	}
+	.services-section-two {
+		padding: 100px 0px 0px;
+	}
+	.sidebar-page-container {
+		padding: 33px 0px 0px;
+	}
+	.news-block {
+		margin-bottom: 34px;
+	}
+	.sidebar-page-container .content-side, .sidebar-page-container .sidebar-side {
+		margin-bottom: 0px;
+	}
+	.services-block {
+		margin-bottom: 28px;
+	}
+	.services-section-two {
+		position: relative;
+		padding: 70px 0px 0px;
+	}
+	.quote-block {
+		margin-bottom: 30px;
+	}
+	.contact-form-section {
+		padding: 21px 0px 22px;
+	}
+	.auto-container {
+		padding: 0px 20px;
+	}
+	.logo {
+		padding: 0px!important;
+	}
+	.auto-container .logo-box img{
+		max-height: 100px;
+		z-index: 0;
+	}
+	.navbar-collapse {
+		padding: 35px 0px 20px 0px;
+	}
+	.services-block .inner-box .content .image img {
+		max-height: 200px!important;
+	}
 }
