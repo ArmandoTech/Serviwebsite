@@ -1287,6 +1287,13 @@ img{
 	background-color:#e20909;
 }
 
+.main-slider .owl-item:nth-child(1) .slide, .main-slider .owl-item:nth-child(3) .slide, .main-slider .owl-item:nth-child(5) .slide {
+	background-image:url(../images/main-slider/image-2.jpg);
+}
+
+.main-slider .owl-item:nth-child(2) .slide, .main-slider .owl-item:nth-child(4) .slide, .main-slider .owl-item:nth-child(6) .slide{
+	background-image:url(../images/main-slider/image-1.jpg);
+}
 /*** 
 
 ====================================================================
