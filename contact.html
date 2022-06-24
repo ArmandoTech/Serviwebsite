@@ -151,7 +151,7 @@
 		
 		<!--Contact Form-->
 		<div class="contact-form"> 
-			<form action="https://formsubmit.co/886bdcb8b7c51fb60dadee432f505967" method="POST" />
+			<form action="" method="POST" id="form"/>
 			
 				<div class="row clearfix">
 					<div class="form-group col-lg-4 col-md-6 col-sm-12">
@@ -169,16 +169,18 @@
 					<div class="form-group col-lg-12 col-md-12 col-sm-12">
 						<textarea name="message" placeholder="¿De qué deseas recibir información?"></textarea>
 					</div>
-					
-					<input type="hidden" name="_next" value="https://servicoches.com.co/thanks.html">
-					<input type="hidden" name="_autoresponse" value="Hemos recibido tu mensaje, nuestro tiempo de respuesta es de 1 a 2 horas máximo.">
-					<input type="hidden" name="_subject" value="¡Nuevo mensaje Servicoches!">
 
 					<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-						<button type="submit" class="theme-btn btn-style-two">Enviar</button>
+						<input type="submit" class="theme-btn btn-style-two" id="button" value="Enviar">
 					</div>                                        
 				</div>
 			</form>
+			<script type="text/javascript"
+  			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+			<script type="text/javascript">
+			emailjs.init('pAUmyxVR39XcvlxpA')
+			</script>
 		</div>
 	
 		
@@ -285,5 +287,27 @@
 
 </body>
 
+<script>
+	const btn = document.getElementById('button');
+
+	document.getElementById('form')
+	.addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	btn.value = 'Enviando...';
+
+	const serviceID = 'default_service';
+	const templateID = 'template_6dz6m1e';
+
+	emailjs.sendForm(serviceID, templateID, this)
+		.then(() => {
+			btn.value = 'Enviar';
+			location.href="thanks.html";
+		}, (err) => {
+			btn.value = 'Enviar';
+			alert(JSON.stringify(err));
+		});
+	});
+</script>
 <!-- contact59:56  -->
 </html>
